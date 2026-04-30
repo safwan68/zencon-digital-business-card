@@ -65,9 +65,7 @@ function DigitalCardPage() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  const contact =
-    contacts.find((item) => item.id === id) ||
-    contacts.find((item) => item.id === "safwan");
+  const contact = contacts.find((item) => item.id === (id || "zencon"));
 
   const saveContact = () => {
     const vcard = `BEGIN:VCARD
