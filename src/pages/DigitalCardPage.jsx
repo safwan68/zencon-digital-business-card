@@ -126,11 +126,11 @@ END:VCARD`;
       value: contact.website.replace("https://", ""),
       action: () => window.open(contact.website, "_blank"),
     },
-    {
-      icon: <WorkOutlined />,
-      label: "Company",
-      value: contact.company,
-    },
+    // {
+    //   icon: <WorkOutlined />,
+    //   label: "Company",
+    //   value: contact.company,
+    // },
   ];
 
   return (
@@ -307,13 +307,13 @@ END:VCARD`;
               sx={{
                 mt: 2.4,
                 mb: 2.5,
-                color: "#64748b",
-                fontSize: 13.5,
+                color: "#152b4b",
+                fontSize: 16,
                 lineHeight: 1.7,
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
-              SAP Solutions • Licensing • Implementation • Support
+              Your Trusted Partner for Digital <br /> & Business Transformation
             </Typography>
 
             <Card
